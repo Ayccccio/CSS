@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examples</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="" rel="stylesheet">
+        <style>
+        	/*第一个元素,ul下面第一个元素必需为li*/
+        	ul>li:first-child{
+        		/*font-size: 50px;*/
+        	}
+
+        	/*最后一个元素,ul下面最后一个元素必需为li*/
+        	ul>li:last-child{
+        		/*font-size: 50px;*/
+        	}
+
+        	/*第指定个元素,ul下面第3个元素,无论是不是li*/
+        	ul>li:nth-child(3){
+        		/*font-size: 50px;*/
+        	}
+
+        	/*第指定倍数的所有元素,ul下面第3,6,9位的元素,无论是不是li*/
+        	ul>li:nth-child(3n){
+        		/*font-size: 50px;*/
+        	}
+
+        	/*第一个指定类型元素,ul下第一个li元素*/
+        	ul>li:first-of-type{
+        		/*font-size: 50px;*/
+        	}
+
+        	/*最后一个指定类型元素,ul下面最后一个li元素*/
+        	ul>li:last-of-type{
+        		/*font-size: 50px;*/
+        	}
+
+        	/*第指定个指定类型的元素,从ul下面的li元素中选择第3个*/
+        	ul>li:nth-of-type(3){
+        		/*font-size: 50px;*/
+        	}
+
+        	/*第指定倍数的所有元素,ul下面的li元素中的第3,6,9位的元素*/
+        	ul>li:nth-of-type(3n){
+        		/*font-size: 50px;*/
+        	}
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <ul>
+        	<span></span>
+        	<li>one</li>
+        	<li>two</li>
+        	<span></span>
+        	<li>three</li>
+        	<li>four</li>
+        	<li>five</li>
+        	<li>six</li>
+        	<span></span>
+        </ul>
+        <ul>
+        	<li>one</li>
+        	<li>two</li>
+        	<li>three</li>
+        	<li>four</li>
+        	<li>five</li>
+        	<li>six</li>
+        </ul>
+    </body>
+</html>

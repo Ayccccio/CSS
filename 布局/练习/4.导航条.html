@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ol,ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .clearfix:before, /* 解决外边距重叠 */
+        .clearfix::after{ /* 解决高度塌陷 */
+            content:"";
+            display:table;
+            clear: both;
+        }
+
+        .menu{
+            width:calc(7*200px);    
+            margin: 20px auto 0 auto;
+            outline: 1px solid #000;
+        }
+        .menu li{
+            width: 200px;
+            font-weight: 400;
+            font-size: 17px;
+            background-color: rgb(231,232, 227);
+            float: left;    /* 向左浮动 */
+            text-align: center;
+            line-height: 48px;
+        }
+        .menu li a{
+            display: block;
+            color:rgb(119, 119, 119);
+        }
+        .menu li a:hover{
+            background-color: rgb(63, 63, 63);
+            color: rgb(231,232, 227);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="menu clearfix">
+        <li><a href="#">HTML/CSS</a></li>
+        <li><a href="#">Browser Side</a></li>
+        <li><a href="#">Server Side</a></li>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">XML</a></li>
+        <li><a href="#">Web Building</a></li>
+        <li><a href="#">Reference</a></li>
+    </ul>
+</body>
+</html>

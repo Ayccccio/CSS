@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正方体</title>
+    <style>
+        /* 正方体通过transform有两种实现方式
+            1.以正方体中心点为6个面的origin通过平移Z轴和旋转x,y轴来控制每一面的位置
+            2.每一面以自身left,right,top,bottom为origin通过旋转x,y来控制每一面，有一面用平移Z轴控制
+
+            这里用的第二种方式实现的
+        */
+
+        body{perspective: 800px;}
+        ul{list-style: none; margin: 0; padding: 0;}
+        ul{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 200px auto;
+            /* transform:rotateY(70deg) rotateX(45deg); */
+            transform-style: preserve-3d;
+            animation: play 10s infinite linear;
+        }
+        ul li{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000;
+            position: absolute;
+            background: 0 0 / 100%;
+            opacity: .7;
+        }
+        ul li:nth-child(1){
+            background-image: url(./images/1.jpg);
+        }
+        ul li:nth-child(2){
+            background-image: url(./images/2.jpg);
+            transform: rotateY(90deg);
+            transform-origin: left;
+        }
+        ul li:nth-child(3){
+            background-image: url(./images/3.jpg);
+            transform: translateZ(-200px);
+            z-index: -1;
+        }
+        ul li:nth-child(4){
+            background-image: url(./images/4.jpg);
+            transform: rotateY(-90deg) ;
+            transform-origin: right;
+        }
+        ul li:nth-child(5){
+            background-image: url(./images/5.jpg);
+            transform: rotateX(-90deg);
+            transform-origin: top;
+        }
+        ul li:nth-child(6){
+            background-image: url(./images/6.jpg);
+            transform: rotateX(90deg);
+            transform-origin: bottom;
+        }
+        @keyframes play{
+            form{
+                transform: rotate(0);
+            }
+            to{transform: rotateX(1turn) rotateY(1turn) rotateZ(1turn)}
+        }
+        </style>
+</head>
+<body>
+    <ul class="wrapper">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

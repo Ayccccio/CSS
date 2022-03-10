@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examples</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="" rel="stylesheet">
+        <style>
+        	*{
+        		margin: 0;
+        		padding: 0;
+        	}
+        	a{
+        		text-decoration-line: none;
+        	}
+        	ul,ol{
+        		list-style-type: none;
+        	}
+        	img{
+        		vertical-align: middle;
+        	}
+
+        	.title{
+        		font-weight: bold;
+        		padding: 10px 0 10px 9px;
+        	}
+        	.box{
+        		width: 300px;
+        		margin: 20px auto 0 auto;
+        		box-shadow: 1px 1px 5px black;
+        		overflow: hidden;
+        	}
+        	.top{
+        		margin-bottom: 15px;
+        		/*overflow: hidden;*/
+        	}
+        	.top>img:hover{
+        		transform: scale(1.1,1.1);
+        	}
+        	.top>p{
+        		border: 1px solid #ddd;
+        	}
+        	p>span{
+        		font-weight: bold;
+        	}
+        	p>span:first-child{
+        		width: 50px;
+        		padding: 8px 0 8px 0;
+        		background-color: red;
+        		display: inline-block;
+        		text-align: center;
+        	}
+        	ul>li{
+        		height: 25px;
+        		font-size: 14px;
+        	}
+        	ul>li a:hover{
+        		color: red;
+        	}
+        	ul>li::before{
+        		content: '●';
+        		padding: 0 8px 0 8px;
+        		color: #ddd;
+        	}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        	<p class="title">新闻专题</p>
+        	<div class="top">
+        		<img src="images/1.webp" alt="">
+        		<p>
+        			<span>HOT</span>
+        			<span>2022年北京冬奥会</span>
+        		</p>
+        	</div>
+        	<ul>
+        		<li><a href="">十九届六中全会在京召开</a></li>
+        		<li><a href="">下半年最强寒潮来了！</a></li>
+        		<li><a href="">省级大员人事密集调整</a></li>
+        		<li><a href="">神十三航天员完成出舱任务</a></li>
+        	</ul>
+        </div>
+    </body>
+</html>

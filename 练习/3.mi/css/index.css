@@ -1,0 +1,419 @@
+.w1226{width: 1226px; margin: 0 auto;}
+
+/* head */
+.head{
+    background-color: #333; 
+    font-size: 12px; 
+    color: #B0B0B0; 
+    text-align: center; 
+    line-height: 40px;
+}
+.head-nav-wapper{width: calc(100% - 160px);}
+.head-nav-left li{ float: left; }
+.head-nav-left li:not(:nth-child(1)) a:before,
+.head-nav-right li:not(:nth-child(1)) a:before{
+    content: "|";
+    display: inline-block;
+    margin: 0 8px;
+    color: #424242;
+}
+/* 下载二维码 */
+.download-code-wapper{position: relative;}
+.download-code-wapper .download-code{
+    position: absolute;
+    width: 124px;
+    height: 0;
+    margin-left: calc(50% - 56px);
+    font-size: 14px;
+    color: #333;
+    box-shadow: 1px 1px 5px rgba(0, 0,0, 0.3);
+    transition: height .3s;
+    overflow: hidden;
+}
+/* 三角形 */
+.download-code-wapper a::after{
+    display: none;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+}
+.download-code-wapper:hover .download-code{
+    height: 148px; color: #333;
+}
+.download-code-wapper:hover a::after{
+    display: block;
+}
+.head-nav-left .download-code img{
+    width: 90px;
+    margin: 18px auto 0;
+    vertical-align: bottom;
+}
+.head a{display: inline-block; width: 100%; height: 100%;} 
+
+.head-nav-right li{ float: left;}
+.head-nav-wapper li:hover{color: #fff;}
+
+.head-wapper .shop-car{position: relative; width: 120px; background-color: #424242; height: 40px;}
+.head-wapper .shop-car:hover{
+    color: #ff6700;
+    background-color: #fff;
+}
+.head-wapper .shop-car:hover .msg{
+    display: block;
+}
+.head-wapper .shop-car .msg{
+    display: none;
+    width: 310px;
+    color: #424242;
+    position: absolute;
+    right: 0;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.head-wapper .shop-car .msg p{
+    margin-top: 10px;
+    padding: 20px 0;
+}
+
+
+/* top */
+/* logo */
+.top .logo{ line-height: 100px; }
+.top-bar{margin-left: 190px;}
+.top .logo img{width: 56px; vertical-align: middle;}
+/* top-bar */
+.top-bar>ul>li{
+    float: left;
+    color: #333;
+    margin-left: 20px;
+    line-height: 100px;
+}
+.top-bar>ul>li:hover>a{
+    color: #ff6700;
+}
+/* top-bar-goods */
+.top-bar-goods-wrapper{
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 0;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(33, 33, 33, .3);
+    transition: height .3s;
+}
+.top-bar>ul>li:hover .top-bar-goods-wrapper{
+    height: 229px;
+}
+.top-bar-goods{
+    margin: 0 auto;
+}
+.top-bar-goods li{
+    float: left;
+    padding: 35px 12px 0;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+/* 分割线 */
+.top-bar-goods li:not(:nth-of-type(1))::before{
+    content: "";
+    width: 1px;
+    height: 100px;
+    background-color: #e0e0e0;
+    position: absolute;
+    margin-left: -12px;
+}
+.top-bar-goods li p:nth-of-type(1){
+    margin-top: 10px;
+}
+.top-bar-goods li p:nth-of-type(2){
+    color: #ff2700;
+}
+
+/* 搜索框 */
+.top .search-goods{
+    margin-top: 25px;
+    color: rgb(244, 244, 244);
+}
+.top .search-goods form{
+    line-height: 50px;
+}
+.top .search-goods form>*{
+    border: 1px solid #e0e0e0;
+}
+.top .search-goods form:hover>*{
+    border-color: rgba(0, 0, 0, .2);
+}
+.top .search-goods form input:focus,
+.top .search-goods form input:focus~*{
+    border-color: #ff6700;
+}
+.top .search-goods form input{
+    height: 48px;
+    width: 223px;
+    padding: 0 10px;
+}
+.top .search-goods form button{
+    width: 38px;
+    height: 48px;
+    margin-left: -1px;
+    padding: 0 6px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+.top .search-goods button::before{
+    content: "\e600";
+    font-family: "iconfont";
+    color: #757575;
+    font-size: 24px;
+}
+.top .search-goods form ul{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    width: 228px;
+    margin-top: -1px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 30px;
+    background-color: #fff;
+}
+.top .search-goods form input:focus ~ ul{
+    display: block;
+}
+
+/* 左侧导航栏 */
+.nav{
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    background-color: rgba(105,101,101,.6);
+}
+.nav li{
+    padding-left: 30px;
+    width: 206px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 14px;
+}
+.nav>li:hover{
+    background-color: #ff6700;
+}
+.nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* nav 右箭头 */
+.nav>li>a::after{
+    content: "\e68c";
+    font-family: "iconfont";
+    float: right;
+    margin-right: 20px;
+    font-size: 23px;
+}
+
+/* 导航栏商品列表 */
+.nav .nav-goods-item{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 264px;
+    background: #fff;
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 18%);
+}
+.nav li:hover>.nav-goods-item{
+    display: block;
+}
+.nav .nav-goods-item li{
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+}
+.nav .nav-goods-item li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav .nav-goods-item li a:hover{
+    color: #ff6700;
+}
+.nav .nav-goods-item li img{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+
+/* 轮播图 */
+.hero{position: relative;}
+.hero .banner-wrapper{
+    position: absolute;
+    left: 0;
+    width: 1226px;
+    background-color: red;
+    overflow: hidden;
+}
+.hero .banner{
+    width: calc(100% * 3);
+    margin-left: -1226px;
+}
+.hero .banner li{
+    float: left;
+}
+.hero .banner li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.hero .banner li img{
+    width: 1226px;
+}
+
+/* 轮播图小耳朵 */
+.banner-wrapper .banner-left-btn,
+.banner-wrapper .banner-right-btn{
+    position: absolute;
+    top: 50%;
+    width: 41px;
+    line-height: 69px;
+    border-radius:0 5px 5px 0;
+    color: rgb(186, 197, 203);
+}
+.banner-wrapper .banner-left-btn{
+    left: 264px;
+}
+.banner-wrapper .banner-right-btn{
+    right: 0;
+}
+.banner-wrapper .banner-left-btn:hover,
+.banner-wrapper .banner-right-btn:hover{
+    background-color: #7a7a7a;
+    color: #fff;
+}
+/* 小耳朵点击 */
+.banner-wrapper .banner-left-btn:active ~ .banner{
+    margin-left: 0;
+}
+.banner-wrapper .banner-right-btn:active ~ .banner{
+    margin-left: calc(-1226px * 2);
+}
+.banner-wrapper .iconfont{
+    font-size: 33px;
+    margin-left: 3px;
+
+}
+
+/* 小圆点 */
+.hero .banner-wrapper .banner-bullte{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, .4);
+    width: 6px;
+    height: 6px;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 6px;
+}
+.hero .banner-wrapper .banner-bullte:nth-of-type(3){
+    right: 70px;
+}
+.hero .banner-wrapper .banner-bullte:nth-of-type(4){
+    right: 50px;
+}
+.hero .banner-wrapper .banner-bullte:hover{
+    background-color: rgba(255, 255, 255, .8);
+    border-color: rgba(0, 0, 0, .4);
+}
+
+/* hero-sub */
+.hero-sub{
+    margin-top: 15px;
+}
+/* channal */
+.hero-sub .channal{
+    width: 230px;
+    padding: 3px;
+    background-color: #5f5750;
+}
+.hero-sub .channal li{
+    position: relative;
+    float: left;
+    width: 76px;
+    height: 82px;
+    color: #757575;
+}
+.hero-sub .channal li:hover{
+    color: #fff;
+}
+
+/* 线 */
+.hero-sub .channal li::after,
+.hero-sub .channal li::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    background: #757575;
+}
+.hero-sub .channal li::after{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 70px;
+}
+.hero-sub .channal li::before{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 1px;
+}
+.hero-sub .channal li:nth-of-type(3n)::after{
+    display: none;
+}
+.hero-sub .channal li:nth-of-type(4)::before,
+.hero-sub .channal li:nth-of-type(5)::before,
+.hero-sub .channal li:nth-of-type(6)::before{
+    display: none;
+}
+
+.hero-sub .channal li a{
+    display: block;
+    height: 62px;
+    margin-top: 18px;
+    font-size: 12px;
+    text-align: center;
+}
+.hero-sub .channal li a i{
+    font-size: 32px;
+}
+
+/* 商品广告promo */
+.hero-sub .promo{
+    margin-left: 14px;
+}
+.hero-sub .promo li{
+    float: left;
+    margin-left: 14px;
+}
+.hero-sub .promo li:nth-child(1){
+    margin-left: 0;
+}
+.hero-sub .promo li a{
+    display: block;
+}
+.hero-sub .promo li img{
+    width: 316px;
+}

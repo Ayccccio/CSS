@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock{
+            width: 300px;
+            height: 300px;
+            margin:200px auto;
+            background: url(./images/bg.png) 0 0 / 300px;
+            position: relative;
+        }
+        .clock div{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform-origin: bottom;
+        }
+
+        /* 时针 */
+        .hour{
+            width: 7px;
+            height: 25%;
+            background-color: #000;
+            animation: run 360000s infinite linear ;
+        }
+        
+        /* 分针 */
+        .min{
+            width: 4px;
+            height: 35%;
+            background-color: #000;
+            animation: run 600s infinite linear ;
+            animation-timing-function: steps(60);
+        }
+
+        /* 秒针 */
+        .sec{
+            width: 2px;
+            height: 40%;
+            background-color: #000;
+            animation: run  10s  infinite  linear ;
+        }
+
+        /* 设置关键帧让指针转一圈 */
+        @keyframes run{
+            from{
+                transform: translateY(-50%);
+            }
+            to{
+                transform: translateY(-50%)  rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            /* width: 170px; */
+            text-decoration: line-through;  /* none没有线 underline下划线 overline上划线 line-through删除线 */
+            text-align: justify;    /* left左对齐 right右对齐 center居中对齐 justify两端对齐 */
+            text-transform: lowercase; /* capitalize首字母大写 uppercase字母全改成大写 lowercase字母全改成小写 */
+            text-indent: 1em;   /* 首字符缩进 */
+            letter-spacing: 0.2em;    /* 字间距 */
+            word-spacing: 2em;  /* 字符中空格距离，多个空格视为一个空格 */
+            /*
+            nowrap遇到br才换行 
+            pre文本不自动换行，保留空格、缩进、换行  
+            pre-wrap文本自动换行，保留空格、缩进、换行  
+            pre-line文本自动换行，合并空格、缩进、换行  
+            */
+            white-space: nowrap;
+            text-overflow: ellipsis;    /* 必需与white-space，overflow搭配使用才能生效 clip超出部分裁剪 ellipsis超出部分以三点省略号代替 */
+            overflow: hidden;
+
+            word-break: break-all;  /* break-all允许单词内换行  keep-all不允许单词内换行*/
+            user-select: text; /* none不允许选取 all点击选取*/
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <p>123456</p>
+        <p>Break Break aabAAbcc </p>
+        <p>“当   我年轻的时候，我 
+            梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。”</p>
+        <a href="javascript:void">11122233</a>
+    </div>
+</body>
+</html>

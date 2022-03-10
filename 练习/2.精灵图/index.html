@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* public */
+        body,ul{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .fr{float: left;}
+
+        /* 内容区 */
+        .content{
+            width: 300px;
+            margin: 200px auto;
+            padding: 20px;
+            border: 10px solid rgb(221, 221, 221);
+        }
+        .content ul li::before{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            vertical-align: middle;
+            background-image: url(./images/indexPic.png);
+        }
+        .content ul li:nth-child(1):before{background-position: 562px 0px;}
+        .content ul li:nth-child(2):before{background-position: 562px -200px;}
+        .content ul li:nth-child(3):before{background-position: 562px -40px;}
+        .content ul li:nth-child(4):before{background-position: 562px -240px;}
+        .content ul li:nth-child(5):before{background-position: 562px -80px;}
+        .content ul li:nth-child(6):before{background-position: 562px -280px;}
+        .content ul li:nth-child(7):before{background-position: 562px -120px;}
+
+        .content ul li{height: 30px; }
+        .content ul li a{color: inherit; font-size: 12px;}
+        .content ul li a:hover{font-size: 16px; color: #ff12c4;}
+
+        /* 侧边bar */
+        .bar-wrapper{
+            width: 40px;
+            position: fixed;
+            right: 20px;
+            top: 30%;
+            /* bottom: 0; */
+            /* margin: auto; */
+        }
+        .home-tool-bar li{
+            width: 40px;
+            height: 40px;
+
+        }
+        .home-tool-bar li{background-image: url(./images/1.png); margin-top: 5px;}
+        .home-tool-bar li:nth-child(1){margin: 0; background-position: 80px -280px;}
+        .home-tool-bar li:nth-child(2){background-position: 160px -200px;}
+        .home-tool-bar li:nth-child(3){background-position: 160px -240px;}
+        .home-tool-bar li:nth-child(4){background-position: 80px -320px;}
+        .home-tool-bar li:nth-child(5){background-position: 0px 0px;}
+
+        .home-tool-bar li:hover:nth-child(1){background-position-x: 40px}
+        .home-tool-bar li:hover:nth-child(2){background-position-x: 120px}
+        .home-tool-bar li:hover:nth-child(3){background-position-x: 120px}
+        .home-tool-bar li:hover:nth-child(4){background-position-x: 40px}
+        .home-tool-bar li:hover:nth-child(5){background-position-x: -40px}
+
+        .home-tool-bar li a{display: block; width: 100%; height: 100%;}
+        </style>
+</head>
+<body>
+    <div class="content">
+        <ul>
+            <li><a href="javascript:void()">秋冬最夯:贝雷帽、报童帽大PK</a></li>
+            <li><a href="javascript:void()">比大品牌更有格调的小众婚戒品牌</a></li>
+            <li><a href="javascript:void()">手腕不过挡，用什么来补救？</a></li>
+            <li><a href="javascript:void()">丑鞋出没！穿好了算你赢</a></li>
+            <li><a href="javascript:void()">红色这么穿，才能气场全开！</a></li>
+            <li><a href="javascript:void()">再说汉字土，这些品牌要生气了！</a></li>
+            <li><a href="javascript:void()">都什么鬼，就你最皮！</a></li>
+        </ul>
+    </div>
+
+    <div class="bar-wrapper">
+        <ul class="home-tool-bar clearfix">
+            <li class="fr"><a href="javascript:;"></a></li>
+            <li class="fr"><a href="javascript:;"></a></li>
+            <li class="fr"><a href="javascript:;"></a></li>
+            <li class="fr"><a href="javascript:;"></a></li>
+            <li class="fr"><a href="javascript:;"></a></li>
+        </ul>
+    </div>
+</body>
+</html>

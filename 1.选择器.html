@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examples</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="" rel="stylesheet">
+        <style>
+        	div{
+        		width: 200px;
+        		height: 600px;
+        		padding: 20px;
+        		margin-top: 10px;
+        		background-color: red;
+        		border: 1px solid #000;
+        		color: #fff;
+        	}
+        	p{
+        		width: 100px;
+        		height: 100px;
+        		background-color: blue;
+        	}
+
+        	[title]{
+        		background-color: orange;
+        	}
+        	[title="demo1"]{
+        		width: 150px;
+        	}
+        	[title*="o"]{
+        		height: 150px;
+        	}
+
+
+        	/*伪类选择器*/
+        	p:first-child{
+        		height: 20px;
+        	}
+        	/*ul>li:last-child{
+        		color: #777;
+        	}
+        	ul>li:nth-child(3){
+        		font-size: 30px;
+        	}
+
+        	ul>li:nth-child(n){
+        		border:1px solid red;
+        	}
+
+        	ul>li:nth-child(3n){
+        		background-color: blue;
+        	}*/
+        	
+        </style>
+    </head>
+    <body>
+		<!-- <div>
+			<p class="blue">
+				<span>div > p > span</span>
+			</p>
+			<p></p>
+			<span class="red">div > span</span> <!-- 选中
+			<span class="red">div > span</span> <!-- 选中
+			<br>
+			<span>div > span</span>
+		</div> -->
+
+		<!-- 属性选择器 -->
+		<!-- <div> -->
+			<!-- <p title="demo"></p> --> <!-- [title] [title*="o"] 选中 -->
+			<!-- <p></p> -->
+			<!-- <p title="demo1"></p> --> <!-- [title] [title="demo1"] [title*="o"] 选中 -->
+			<!-- <p></p> -->
+		<!-- </div> -->
+
+		<!-- 伪类选择器 -->
+
+		<ul>
+			<li>
+				<p></p>
+				<p></p>
+				<p></p>
+			</li>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+			<li>four</li>
+			<li>five</li>
+			<li>six</li>
+		</ul>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3122695_nqfhqe8a4gi.css">
+    <style>
+        /* 清除浏览器默认样式 */
+        body,ul{margin: 0; padding: 0;}
+        li{list-style: none;}
+        img{vertical-align: middle;}
+        a{text-decoration: none;}
+
+        .fl{float:left;}
+        .fr{float:right;}
+        .clearfix::before,
+        .clearfix::after{
+            content:"";
+            display: table;
+            clear:both;
+        }
+        
+        .box{
+            width: 500px;
+            margin:100px auto;
+            border:1px solid red;
+            overflow:hidden;
+        }
+
+        /* 左右小耳朵 */
+        .l-icon::before{
+            content:"";
+        }
+
+        .w2500{width: 2500px;}
+        ul>li{width: 500px;}
+        /* ul>li img{width: 100%;} */
+        /* a,img{display: block;} */
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="clearfix w2500">
+            <li class="fl"><a href="javascript:void"><img src="./images/3362f5b9cb9311ee.jpg.webp" alt=""></a></li>
+            <li class="fl"><a href="javascript:void"><img src="./images/9269eed2bca2c083.jpg.webp" alt=""></a></li>
+            <li class="fl"><a href="javascript:void"><img src="./images/cc0d109875b1017b.jpg.webp" alt=""></a></li>
+            <li class="fl"><a href="javascript:void"><img src="./images/q (1).jpg" alt=""></a></li>
+            <li class="fl"><a href="javascript:void"><img src="./images/q.jpg" alt=""></a></li>
+        </ul>
+        <div class="fl">
+            <a href="javascript:void"><i class="iconfont icon-zuojiantou"></i></a>
+        </div>
+        <div class="fr">
+            <a href="javascript:void"><i class="iconfont icon-youjiantou"></i></a>
+        </div>
+    </div>
+</body>
+</html>
