@@ -1,0 +1,139 @@
+// 设计宽度
+@total-width: 381;
+
+html {
+    // 换算vw单位
+    font-size: (100vw/@total-width)*20;
+    background-color: #eff0f4;
+}
+
+.w {
+    width: (352rem/20);
+    margin: 0 auto;
+}
+
+// 头部
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: (90rem/20);
+
+    .title a {
+        font-size: (28rem/20);
+        font-weight: 600;
+        color: #000;
+    }
+
+    & i {
+        font-size: (30rem/20);
+        color: #999999;
+    }
+}
+
+// banner
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .banner {
+        width: (352rem/20);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// nav
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-top: (27rem/20);
+    color: white;
+    height: (128rem/20);
+
+    .nav-item {
+        width: (167rem/20);
+        font-size: (20rem/20);
+        border-radius: (5rem/20);
+
+        a {
+            display: block;
+            line-height: (54rem/20);
+        }
+
+        i {
+            font-size: (24rem/20);
+            margin: 0 (14rem/20) 0 (16rem/20);
+        }
+    }
+
+    .cour {
+        background-color: #F97053;
+    }
+
+    .star {
+        background-color: #CD6EFE;
+    }
+
+    .sub {
+        background-color: #FE4479;
+    }
+
+    .download {
+        background-color: #1BC4FB;
+    }
+}
+
+.course-list {
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: (56rem/20);
+        h2 {
+            font-size: (18rem/20);
+            border-left: 2px solid #3A84FF;
+            padding-left: (8rem/20);
+        }
+        a{
+            font-size: (14rem/20);
+        }
+
+    }
+    .course-wrapper{
+        display: flex;
+        width: (366rem/20);
+        overflow: auto;
+        .course-item{
+            display: flex;
+            flex: none;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: (165rem/20);
+            margin-right: (15rem/20);
+            padding: (13rem/20);
+            background-color: white;
+            border-radius: (7rem/20);
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: (16rem/20);
+                line-height: (38rem/20);
+            }
+            .course-producer{
+                img{
+                    width: (22rem/20);
+                }
+                span{
+                    font-size: (12rem/20);
+                    color: #B3B1B1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+html {
+  font-size: 5.24934383vw;
+  background-color: #eff0f4;
+}
+.w {
+  width: 17.6rem;
+  margin: 0 auto;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+.head .title a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+}
+.head i {
+  font-size: 1.5rem;
+  color: #999999;
+}
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.banner-wrapper .banner {
+  width: 17.6rem;
+}
+.banner-wrapper .banner img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding-top: 1.35rem;
+  color: white;
+  height: 6.4rem;
+}
+nav .nav-item {
+  width: 8.35rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+nav .nav-item a {
+  display: block;
+  line-height: 2.7rem;
+}
+nav .nav-item i {
+  font-size: 1.2rem;
+  margin: 0 0.7rem 0 0.8rem;
+}
+nav .cour {
+  background-color: #F97053;
+}
+nav .star {
+  background-color: #CD6EFE;
+}
+nav .sub {
+  background-color: #FE4479;
+}
+nav .download {
+  background-color: #1BC4FB;
+}
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.8rem;
+}
+.course-list .title h2 {
+  font-size: 0.9rem;
+  border-left: 2px solid #3A84FF;
+  padding-left: 0.4rem;
+}
+.course-list .title a {
+  font-size: 0.7rem;
+}
+.course-list .course-wrapper {
+  display: flex;
+  width: 18.3rem;
+  overflow: auto;
+}
+.course-list .course-wrapper .course-item {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 8.25rem;
+  margin-right: 0.75rem;
+  padding: 0.65rem;
+  background-color: white;
+  border-radius: 0.35rem;
+}
+.course-list .course-wrapper .course-item img {
+  width: 100%;
+}
+.course-list .course-wrapper .course-item h3 {
+  font-size: 0.8rem;
+  line-height: 1.9rem;
+}
+.course-list .course-wrapper .course-item .course-producer img {
+  width: 1.1rem;
+}
+.course-list .course-wrapper .course-item .course-producer span {
+  font-size: 0.6rem;
+  color: #B3B1B1;
+}
